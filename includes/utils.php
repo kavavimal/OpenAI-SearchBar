@@ -1,7 +1,7 @@
 <?php
-add_action("wp_ajax_add_ai_search_bar_form", "add_ai_search_bar_form");
-add_action("wp_ajax_nopriv_add_ai_search_bar_form", "add_ai_search_bar_form");
-function add_ai_search_bar_form(){
+add_action("wp_ajax_OASB_Add_AI_Search_Bar_Form", "OASB_Add_AI_Search_Bar_Form");
+add_action("wp_ajax_nopriv_OASB_Add_AI_Search_Bar_Form", "OASB_Add_AI_Search_Bar_Form");
+function OASB_Add_AI_Search_Bar_Form(){
 
     $data = array();
     $option_update = false;
@@ -22,7 +22,7 @@ function add_ai_search_bar_form(){
     exit();
 }
 
-function chatgpt_ai_search_bar(){
+function OASB_AI_Search_Bar(){
 
     global $wpdb;
     $options = $wpdb->get_results( "SELECT option_value FROM {$wpdb->prefix}options WHERE option_name LIKE 'chatgpt-key%'" ); 
@@ -46,4 +46,4 @@ function chatgpt_ai_search_bar(){
     return $html;
 
 }
-add_shortcode('ai_search_bar', 'chatgpt_ai_search_bar'); 
+add_shortcode('ai_search_bar', 'OASB_AI_Search_Bar'); 

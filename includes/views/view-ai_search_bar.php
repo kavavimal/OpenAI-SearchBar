@@ -5,11 +5,11 @@ function view_ai_search_bar(){ ?>
             <div class="infinity-boxes infinity-header">
                 <div class="infinity-box infinity-page-title">
                     <h1>
-                        <?php esc_html_e( 'ChatGPT: AI Search Bar', PAGE_ID ); ?>
+                        <?php esc_html_e( 'OpenAI: Search Bar', PAGE_ID ); ?>
                     </h1>
                 </div>
                 <div class="infinity-box infinity-logo">
-                    <a href="https://www.infinitysoftech.co/" target="_blank"><img src="<?php esc_html_e(PTG_ASSETS_URL); ?>uploads/logo-black-text.png" alt="Infinity Softech Logo"></a>
+                    <a href="https://www.infinitysoftech.co/" target="_blank"><img src="<?php esc_html_e(OASB_ASSETS_URL); ?>uploads/logo-black-text.png" alt="Infinity Softech Logo"></a>
                 </div>
             </div>
             <?php 
@@ -28,7 +28,7 @@ function view_ai_search_bar(){ ?>
             <div class="infinity form-wrap">
                 <div id="infinity-container" class="wp-clearfix">
                     <div class="infinity-sub-title">
-                        <h2><span><img src="<?php esc_html_e(PTG_ASSETS_URL); ?>uploads/check-mark.png" alt="Check Mark"></span><?php esc_html_e( 'ChatGPT: AI Search Bar', PAGE_ID ); ?></h2>
+                        <h2><span><img src="<?php esc_html_e(OASB_ASSETS_URL); ?>uploads/check-mark.png" alt="Check Mark"></span><?php esc_html_e( 'ChatGPT: AI Search Bar', PAGE_ID ); ?></h2>
                         <p><?php esc_html_e( "- Add the ChatGPT Search Bar into your website pages without having to manually edit your website's source code.", PAGE_ID ); ?></p>
                     </div>
                     <form action="<?php echo get_ai_search_bar_url(); ?>" method="post" class="ai_search_bar_form" enctype="multipart/form-data">
@@ -50,7 +50,7 @@ function view_ai_search_bar(){ ?>
             <div class="infinity-footer">
                 <div class="infinity-box infinity-page-title">
                     <h3>
-                        <?php esc_html_e( 'ChatGPT: AI Search Bar', PAGE_ID ); ?>
+                        <?php esc_html_e( 'OpenAI: Search Bar', PAGE_ID ); ?>
                     </h3>
                 </div>
                 <div class="infinity-box infinity-logo">

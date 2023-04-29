@@ -26,7 +26,7 @@
 
 /* Search Bar Page Content Part */
 .infinity-ai-search-bar h2{position: relative;padding-left: 40px;}
-.infinity-ai-search-bar h2 > span {content: '';position: absolute;background-image: url(/wp-content/uploads/2023/03/check-mark.png);top: 0;left: 0;height: auto;width: 34px;background-size: 100%;}
+.infinity-ai-search-bar h2 > span {content: '';position: absolute;top: 0;left: 0;height: auto;width: 34px;background-size: 100%;}
 .infinity-ai-search-bar h2 > span img{width: 32px;}
 #infinity-container {padding: 50px 30px;}
 .infinity-sub-title {padding: 0 0 10px 0;border-bottom: 1px solid #ffffff;}
@@ -39,7 +39,7 @@
 
 /* Documentation Page Content Part */
 .infinity-ai-search-bar h2{position: relative;padding-left: 40px;}
-.infinity-ai-search-bar h2 > span {content: '';position: absolute;background-image: url(/wp-content/uploads/2023/03/check-mark.png);top: 0;left: 0;height: auto;width: 34px;background-size: 100%;}
+.infinity-ai-search-bar h2 > span {content: '';position: absolute;top: 0;left: 0;height: auto;width: 34px;background-size: 100%;}
 .infinity-ai-search-bar h2 > span img{width: 32px;}
 .infinity-documentation .infinity-sub-title {margin: 20px 0;}
 a.link-yellow {color: #ffffff;border-bottom: 1px solid #ffeb00;}

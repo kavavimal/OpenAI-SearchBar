@@ -11,16 +11,16 @@
 */
 defined( 'ABSPATH' ) || exit;
 
-define( 'PTG__FILE__', __FILE__ );
-define( 'PTG_PLUGIN_BASE', plugin_basename( PTG__FILE__ ) );
-define( 'PTG_PATH', plugin_dir_path( PTG__FILE__ ) );
+define( 'OASB__FILE__', __FILE__ );
+define( 'OASB_PLUGIN_BASE', plugin_basename( OASB__FILE__ ) );
+define( 'OASB_PATH', plugin_dir_path( OASB__FILE__ ) );
 
-define( 'PTG_URL', plugins_url( '/', PTG__FILE__ ) );
+define( 'OASB_URL', plugins_url( '/', OASB__FILE__ ) );
 
-define( 'PTG_ASSETS_PATH', PTG_PATH . 'assets/' );
-define( 'PTG_ASSETS_URL', PTG_URL . 'assets/' );
+define( 'OASB_ASSETS_PATH', OASB_PATH . 'assets/' );
+define( 'OASB_ASSETS_URL', OASB_URL . 'assets/' );
 
-add_action( 'plugins_loaded', 'ptg_load_plugin_textdomain' );
+add_action( 'plugins_loaded', 'OASB_Load_Plugin' );
 
 /**
  * Load ChatGPT : AI Search Bar textdomain.
@@ -32,10 +32,10 @@ add_action( 'plugins_loaded', 'ptg_load_plugin_textdomain' );
  * @return void
  */
 
-function ptg_load_plugin_textdomain() {
+function OASB_Load_Plugin() {
 	load_plugin_textdomain( 'ai_search_bar' );
 }
 
-register_deactivation_hook( __FILE__, 'on_PTG_deactivate' );
+register_deactivation_hook( __FILE__, 'on_OASB_deactivate' );
 
-require PTG_PATH . 'includes/plugin.php';
+require OASB_PATH . 'includes/plugin.php';
