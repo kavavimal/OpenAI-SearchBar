@@ -1,5 +1,5 @@
 <?php
-function view_documentation(){ ?>
+function OASB_view_documentation(){ ?>
     <div class="infinity-ai-search-bar">
         <div class="infinity-wrapper">
             <div class="infinity-boxes infinity-header">

@@ -1,5 +1,5 @@
 <?php 
-function view_ai_search_bar(){ ?>
+function OASB_view_ai_search_bar(){ ?>
     <div class="infinity-ai-search-bar">
         <div class="infinity-wrapper">
             <div class="infinity-boxes infinity-header">
@@ -31,7 +31,7 @@ function view_ai_search_bar(){ ?>
                         <h2><span><img src="<?php esc_html_e(OASB_ASSETS_URL); ?>uploads/check-mark.png" alt="Check Mark"></span><?php esc_html_e( 'ChatGPT: AI Search Bar', PAGE_ID ); ?></h2>
                         <p><?php esc_html_e( "- Add the ChatGPT Search Bar into your website pages without having to manually edit your website's source code.", PAGE_ID ); ?></p>
                     </div>
-                    <form action="<?php echo get_ai_search_bar_url(); ?>" method="post" class="ai_search_bar_form" enctype="multipart/form-data">
+                    <form action="<?php echo OASB_get_ai_search_bar_url(); ?>" method="post" class="ai_search_bar_form" enctype="multipart/form-data">
                         <?php wp_nonce_field( 'add', 'add_ai_search_bar_form', true ); ?>
                         <div id="">
                             <div class="col-wrap">

@@ -21,7 +21,7 @@ function OASB_ai_search_bar_register_admin_menu(){
  */
 function OASB_ai_search_bar_import_classname_actions(){
     if( isset( $_GET['page'] ) && 'documentation' == $_GET['page'] ){
-       echo view_documentation();
+       echo OASB_view_documentation();
     }
 }
 
@@ -30,15 +30,11 @@ function OASB_ai_search_bar_import_classname_actions(){
  */
 function OASB_ai_search_bar_actions(){ 
     if( isset( $_GET['page'] ) && 'ai_search_bar' == $_GET['page'] ){
-        echo view_ai_search_bar();
+        echo OASB_view_ai_search_bar();
     }
 }
 
-function get_documentation_url() {
-    return admin_url('admin.php?page=documentation');
-}
-
-function get_ai_search_bar_url() {
+function OASB_get_ai_search_bar_url() {
     return admin_url('admin.php?page=ai_search_bar');
 }
 
